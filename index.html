@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Rainbow Privacy Policy · 新彩虹 隱私權政策</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 820px; margin: 0 auto; padding: 28px 18px 64px;
+         font-family: -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang TC", "Microsoft JhengHei", sans-serif;
+         font-size: 16px; line-height: 1.75; color: #222; background: #fff; }
+  h1 { font-size: 24px; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 30px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #e2e2e2; }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 22px; }
+  .meta code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .note { background: #f7f9fc; border-left: 4px solid #7aa7d9; padding: 10px 14px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .lang { margin-top: 56px; padding-top: 24px; border-top: 2px solid #e2e2e2; }
+  a { color: #0b6bcb; }
+  footer { margin-top: 40px; color: #777; font-size: 13px; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0 6px; font-size: 15px; }
+  th, td { border: 1px solid #e2e2e2; padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: #f5f7fa; font-weight: 600; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  @media print { body { max-width: none; } .lang { page-break-before: always; } }
+</style>
+</head>
+<body>
+
+<h1>New Rainbow Privacy Policy</h1>
+<p class="meta">
+  App: New Rainbow　Package: <code>com.local.newrainbow</code><br>
+  Effective date: 2026-10-01　Last updated: 2026-10-22
+</p>
+
+<div class="note">In one sentence: <b>the App collects, uploads and shares no personal data.</b> There is no account, no advertising, and no analytics or crash-reporting SDK. Everything you play comes from files or links you add yourself.</div>
+
+<h2>1. Overview</h2>
+<p>New Rainbow (package name <code>com.local.newrainbow</code>, “the App”) is a local and network video player. This policy explains what the App does and does not do with your information, and what each permission is used for.</p>
+
+<h2>2. We do not collect personal data</h2>
+<ul>
+  <li>The App has no account system, requires no registration, and never asks for your name, phone number, email address or location.</li>
+  <li>The App contains no advertising, analytics or crash-reporting SDKs.</li>
+  <li>Your playlists, playback history, file names and usage are never uploaded to the developer or any third party.</li>
+  <li>The developer cannot see and does not retain any of your data.</li>
+</ul>
+
+<h2>3. Data stored only on your device</h2>
+<p>The following is stored exclusively on your own device (app-private storage / settings) and is removed when you uninstall the App:</p>
+<ul>
+  <li>Your playlist (links and names you add)</li>
+  <li>Your settings (grid rows/columns, language, playback options)</li>
+  <li>The last playback position (so playback can continue next time)</li>
+  <li>Debug log: <b>DISABLED by default</b>. It is written only after you turn it on in Settings → Debug log, purely to troubleshoot playback. It contains technical player information (event timestamps, decoder mode, error reasons) and no personal data. You can turn it off at any time and export or delete it yourself from within the App.</li>
+</ul>
+
+<h2>4. Network usage</h2>
+<p>The App makes network requests only in these cases:</p>
+<ul>
+  <li><b>Playing the network addresses you add</b> — data flows directly between your device and that content server.</li>
+  <li><b>Resolving video links</b> — when you paste a link from certain video sites (for example YouTube), the App contacts that site and its public pages directly to obtain a playable media URL. Your IP address and request are visible to those servers, and their own privacy policies apply. No account is used, and results are never uploaded to the developer.</li>
+  <li><b>LAN editing</b> — when you enable it, the App runs a local web service bound to your local network only (default port 12997) so a phone or PC on the same Wi-Fi can edit the playlist. It is not exposed to the internet and requires no account. Use it only on trusted networks; the service stops when you turn the feature off or close the App.</li>
+</ul>
+<p>Apart from the above, the App makes no network requests and uploads nothing in the background.</p>
+
+<h2>5. Permissions</h2>
+<p>The App declares exactly 10 permissions (some rows group two related entries):</p>
+<table>
+  <tr><th>Permission</th><th>Why it is used</th><th>When it applies</th></tr>
+  <tr><td><code>READ_MEDIA_VIDEO</code> (Android 13+)</td><td>List the video files on the device so you can pick them for the video wall</td><td>Only after you grant it</td></tr>
+  <tr><td><code>READ_MEDIA_VISUAL_USER_SELECTED</code> (Android 14+)</td><td>Support the “Select photos and videos” partial-access mode</td><td>Only with partial access</td></tr>
+  <tr><td><code>READ_EXTERNAL_STORAGE</code> (Android 12L and below)</td><td>Same purpose on older Android versions</td><td>Only after you grant it</td></tr>
+  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Open the URLs you add, resolve links, serve the LAN editing page</td><td>While those features are used</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Keep playback running in the background and with the screen off (a notification shows status and lets you stop it)</td><td>While playback is active</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>Keep the CPU awake during playback</td><td>While playback is active</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>Show the playback notification and the “resume playback” notification</td><td>While the service runs</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Restore the keep-alive schedule after a reboot so long playback can resume</td><td>After a restart</td></tr>
+</table>
+
+<h3>Permissions the App does NOT request</h3>
+<ul>
+  <li>Location (coarse or fine), contacts, calendar, SMS, call logs</li>
+  <li>Camera, microphone</li>
+  <li>“Draw over other apps” / overlay (picture-in-picture uses the system PiP mechanism, which needs no such permission)</li>
+  <li>Full-screen notifications / full-screen intent (resume-after-kill uses a normal notification plus automatic resume when the screen comes on)</li>
+  <li>Battery-optimization exemption (the App only opens the system list; you decide whether to whitelist it)</li>
+  <li><code>MANAGE_EXTERNAL_STORAGE</code> (all-files access), <code>QUERY_ALL_PACKAGES</code> (installed-app inventory)</li>
+</ul>
+<p>Any granted permission can be revoked in system settings; the related feature stops working while other features are unaffected. For example, with only “Select photos and videos” granted, you can still play files by picking a folder through the system file picker.</p>
+
+<h2>6. Children</h2>
+<p>The App is not designed for children specifically and collects no age information. The App provides no content itself; everything played is added by the user.</p>
+
+<h2>7. Content and responsibility</h2>
+<p>The App is a playback tool only. It does not provide, host or download any video content and is not responsible for third-party content. Please ensure you have the rights to the content you play and comply with local laws and your content provider’s terms.</p>
+
+<h2>8. Your control</h2>
+<ul>
+  <li>Revoke any permission at any time in Settings → Apps → New Rainbow → Permissions.</li>
+  <li>Clear the App’s data or uninstall it to delete all local settings and playlists.</li>
+  <li>The debug log can be turned off at any time and exported or deleted by you.</li>
+</ul>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, this page and the “last updated” date will be updated. If a future version starts collecting data (for example by adding an optional crash-reporting SDK), this policy will be updated before that version is released, and the change will be noted in the release notes.</p>
+
+<h2>10. Contact</h2>
+<p>Questions? Contact: <a href="mailto:newrainbow2026@gmail.com">your-email@example.com</a></p>
+
+<!-- ===================== 繁體中文 ===================== -->
+<div class="lang" lang="zh-Hant">
+
+<h1>新彩虹 隱私權政策</h1>
+<p class="meta">
+  應用程式：新彩虹（New Rainbow）　套件名稱：<code>com.local.newrainbow</code><br>
+  生效日期：2026 年 10 月 1 日　最後更新：2026 年 10 月 22 日
+</p>
+
+<div class="note">一句話總結：<b>本應用程式不蒐集、不上傳、不分享任何個人資料。</b>沒有帳號、沒有廣告，也沒有分析或當機回報 SDK。你播放的內容，全部來自你自己加入的檔案或連結。</div>
+
+<h2>一、總覽</h2>
+<p>新彩虹（套件名稱 <code>com.local.newrainbow</code>，以下稱「本應用程式」）是一款本機與網路影片播放器。本政策說明本應用程式會處理哪些資料、不會處理哪些資料，以及各項權限的實際用途。</p>
+
+<h2>二、我們不蒐集個人資料</h2>
+<ul>
+  <li>本應用程式沒有帳號系統，無須註冊，也從不要求你提供姓名、電話號碼、電子郵件地址或位置。</li>
+  <li>本應用程式不含任何廣告、分析或當機回報 SDK。</li>
+  <li>你的播放清單、播放紀錄、檔案名稱與使用情形，都不會上傳給開發者或任何第三方。</li>
+  <li>開發者無法查看，也不會保留你的任何資料。</li>
+</ul>
+
+<h2>三、僅儲存在你裝置上的資料</h2>
+<p>下列資料只會儲存在你自己的裝置上（應用程式私有儲存空間／設定），並在你解除安裝本應用程式時一併刪除：</p>
+<ul>
+  <li>你的播放清單（你加入的連結與名稱）</li>
+  <li>你的設定（網格列數與欄數、語言、播放選項）</li>
+  <li>上次播放位置（以便下次繼續播放）</li>
+  <li>偵錯記錄：<b>預設關閉</b>。只有你在「設定 → 偵錯記錄」中開啟後才會寫入，純粹用於排解播放問題。內容包含播放器的技術資訊（事件時間戳記、解碼模式、錯誤原因），不含任何個人資料。你可以隨時關閉，並在應用程式內自行匯出或刪除。</li>
+</ul>
+
+<h2>四、網路使用</h2>
+<p>本應用程式僅在下列情況發出網路請求：</p>
+<ul>
+  <li><b>播放你加入的網路位址</b>：資料直接在你的裝置與該內容伺服器之間傳輸。</li>
+  <li><b>解析影片連結</b>：當你貼上特定影片網站（例如 YouTube）的連結時，本應用程式會直接連線該網站及其公開頁面，以取得可播放的媒體網址。此時你的 IP 位址與請求內容會對這些伺服器可見，並適用其各自的隱私權政策。過程中不使用任何帳號，解析結果也不會上傳給開發者。</li>
+  <li><b>區域網路編輯</b>：當你啟用此功能時，本應用程式會執行一個僅限區域網路存取的網頁服務（預設連接埠 12997），讓同一 Wi-Fi 上的手機或電腦編輯播放清單。此服務不會對網際網路公開，也不需要帳號。請只在可信任的網路上使用；關閉此功能或結束應用程式後，服務就會停止。</li>
+</ul>
+<p>除上述情況外，本應用程式不會發出任何網路請求，也不會在背景中上傳任何資料。</p>
+
+<h2>五、權限</h2>
+<p>本應用程式共宣告 10 項權限（部分列合併兩個相關項目）：</p>
+<table>
+  <tr><th>權限</th><th>用途</th><th>適用時機</th></tr>
+  <tr><td><code>READ_MEDIA_VIDEO</code>（Android 13+）</td><td>列出裝置上的影片檔案，供你挑選並放入影片牆</td><td>僅在你授予權限後</td></tr>
+  <tr><td><code>READ_MEDIA_VISUAL_USER_SELECTED</code>（Android 14+）</td><td>支援「選取相片和影片」的部分存取模式</td><td>僅在你授予部分存取時</td></tr>
+  <tr><td><code>READ_EXTERNAL_STORAGE</code>（Android 12L 及以下）</td><td>在較舊的 Android 版本提供相同用途</td><td>僅在你授予權限後</td></tr>
+  <tr><td><code>INTERNET</code>、<code>ACCESS_NETWORK_STATE</code></td><td>開啟你加入的網址、解析連結、提供區域網路編輯頁面</td><td>使用這些功能期間</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>、<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>讓播放能在背景與螢幕關閉時持續進行（通知列會顯示狀態，並可讓你停止播放）</td><td>播放進行期間</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>在播放期間讓 CPU 保持運作</td><td>播放進行期間</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code>（Android 13+）</td><td>顯示播放通知與「繼續播放」通知</td><td>服務執行期間</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>重新開機後還原背景常駐排程，讓長時間播放能自動接續</td><td>重新開機後</td></tr>
+</table>
+
+<h3>本應用程式不申請以下權限</h3>
+<ul>
+  <li>位置（粗略或精確）、聯絡人、行事曆、簡訊、通話記錄</li>
+  <li>相機、麥克風</li>
+  <li>「在其他應用程式上層繪製」／懸浮視窗（子母畫面使用系統 PiP 機制，不需要此權限）</li>
+  <li>全螢幕通知／全螢幕意圖（應用程式被終止後的續播，採用一般通知，並在螢幕亮起時自動恢復）</li>
+  <li>電池最佳化豁免（本應用程式只會開啟系統清單，是否加入白名單由你決定）</li>
+  <li><code>MANAGE_EXTERNAL_STORAGE</code>（所有檔案存取）、<code>QUERY_ALL_PACKAGES</code>（已安裝應用程式清單）</li>
+</ul>
+<p>任何已授予的權限都可以在系統設定中撤銷；撤銷後，相關功能會停止運作，其他功能則不受影響。例如，當你只授予「選取相片和影片」權限時，仍可透過系統檔案選擇器挑選資料夾來播放檔案。</p>
+
+<h2>六、兒童</h2>
+<p>本應用程式並非專為兒童設計，也不會蒐集任何年齡資訊。本應用程式本身不提供任何內容；所有播放內容均由使用者自行加入。</p>
+
+<h2>七、內容與責任</h2>
+<p>本應用程式僅為播放工具，不提供、不代管、亦不下載任何影片內容，且不對第三方內容負責。請確認你對所播放的內容擁有合法權利，並遵守當地法律及內容提供者的服務條款。</p>
+
+<h2>八、你的控制權</h2>
+<ul>
+  <li>你可以隨時在「設定 → 應用程式 → 新彩虹 → 權限」中撤銷任何權限。</li>
+  <li>清除應用程式資料或解除安裝，即可刪除所有本機設定與播放清單。</li>
+  <li>偵錯記錄可隨時關閉，並由你自行匯出或刪除。</li>
+</ul>
+
+<h2>九、政策變更</h2>
+<p>若本政策有所變更，我們會更新本頁內容及「最後更新」日期。若未來版本開始蒐集資料（例如加入選用的當機回報 SDK），我們會在該版本發布前更新本政策，並在版本說明中註明這項變更。</p>
+
+<h2>十、聯絡我們</h2>
+<p>如有疑問，請聯絡：<a href="mailto:newrainbow2026@gmail.com">your-email@example.com</a></p>
+
+</div>
+
+<footer>
+  © New Rainbow / 新彩虹 · This page can be saved or printed (Ctrl+P) · 本頁可離線儲存或列印。
+</footer>
+
+</body>
+</html>
