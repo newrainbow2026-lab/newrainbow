@@ -32,7 +32,7 @@
 <h1>New Rainbow Privacy Policy</h1>
 <p class="meta">
   App: New Rainbow　Package: <code>com.local.newrainbow</code><br>
-  Effective date: 2026-10-01　Last updated: 2026-10-22
+  Effective date: 2026-10-01　Last updated: 2026-11-11
 </p>
 
 <div class="note">In one sentence: <b>the App collects, uploads and shares no personal data.</b> There is no account, no advertising, and no analytics or crash-reporting SDK. Everything you play comes from files or links you add yourself.</div>
@@ -67,18 +67,17 @@
 <p>Apart from the above, the App makes no network requests and uploads nothing in the background.</p>
 
 <h2>5. Permissions</h2>
-<p>The App declares exactly 10 permissions (some rows group two related entries):</p>
+<p>The App declares exactly 8 permissions (some rows group two related entries):</p>
 <table>
   <tr><th>Permission</th><th>Why it is used</th><th>When it applies</th></tr>
-  <tr><td><code>READ_MEDIA_VIDEO</code> (Android 13+)</td><td>List the video files on the device so you can pick them for the video wall</td><td>Only after you grant it</td></tr>
-  <tr><td><code>READ_MEDIA_VISUAL_USER_SELECTED</code> (Android 14+)</td><td>Support the “Select photos and videos” partial-access mode</td><td>Only with partial access</td></tr>
-  <tr><td><code>READ_EXTERNAL_STORAGE</code> (Android 12L and below)</td><td>Same purpose on older Android versions</td><td>Only after you grant it</td></tr>
+  <tr><td><code>READ_EXTERNAL_STORAGE</code> (Android 12L and below)</td><td>Read video files for the device video list on older Android versions</td><td>Only after you grant it</td></tr>
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Open the URLs you add, resolve links, serve the LAN editing page</td><td>While those features are used</td></tr>
   <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Keep playback running in the background and with the screen off (a notification shows status and lets you stop it)</td><td>While playback is active</td></tr>
   <tr><td><code>WAKE_LOCK</code></td><td>Keep the CPU awake during playback</td><td>While playback is active</td></tr>
   <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>Show the playback notification and the “resume playback” notification</td><td>While the service runs</td></tr>
   <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Restore the keep-alive schedule after a reboot so long playback can resume</td><td>After a restart</td></tr>
 </table>
+<p>The App does <b>not</b> declare the photo/video media permissions <code>READ_MEDIA_VIDEO</code> or <code>READ_MEDIA_VISUAL_USER_SELECTED</code>. On Android 13 and above you pick the videos to play yourself in the system file picker (SAF); the App only receives the items you selected and never reads your whole gallery.</p>
 
 <h3>Permissions the App does NOT request</h3>
 <ul>
@@ -89,7 +88,7 @@
   <li>Battery-optimization exemption (the App only opens the system list; you decide whether to whitelist it)</li>
   <li><code>MANAGE_EXTERNAL_STORAGE</code> (all-files access), <code>QUERY_ALL_PACKAGES</code> (installed-app inventory)</li>
 </ul>
-<p>Any granted permission can be revoked in system settings; the related feature stops working while other features are unaffected. For example, with only “Select photos and videos” granted, you can still play files by picking a folder through the system file picker.</p>
+<p>Any granted permission can be revoked in system settings; the related feature stops working while other features are unaffected. On Android 13 and above no storage permission is needed at all: you pick the videos to play through the system file picker at any time.</p>
 
 <h2>6. Children</h2>
 <p>The App is not designed for children specifically and collects no age information. The App provides no content itself; everything played is added by the user.</p>
@@ -116,7 +115,7 @@
 <h1>新彩虹 隱私權政策</h1>
 <p class="meta">
   應用程式：新彩虹（New Rainbow）　套件名稱：<code>com.local.newrainbow</code><br>
-  生效日期：2026 年 10 月 1 日　最後更新：2026 年 10 月 22 日
+  生效日期：2026 年 10 月 1 日　最後更新：2026 年 11 月 11 日
 </p>
 
 <div class="note">一句話總結：<b>本應用程式不蒐集、不上傳、不分享任何個人資料。</b>沒有帳號、沒有廣告，也沒有分析或當機回報 SDK。你播放的內容，全部來自你自己加入的檔案或連結。</div>
@@ -151,18 +150,17 @@
 <p>除上述情況外，本應用程式不會發出任何網路請求，也不會在背景中上傳任何資料。</p>
 
 <h2>五、權限</h2>
-<p>本應用程式共宣告 10 項權限（部分列合併兩個相關項目）：</p>
+<p>本應用程式共宣告 8 項權限（部分列合併兩個相關項目）：</p>
 <table>
   <tr><th>權限</th><th>用途</th><th>適用時機</th></tr>
-  <tr><td><code>READ_MEDIA_VIDEO</code>（Android 13+）</td><td>列出裝置上的影片檔案，供你挑選並放入影片牆</td><td>僅在你授予權限後</td></tr>
-  <tr><td><code>READ_MEDIA_VISUAL_USER_SELECTED</code>（Android 14+）</td><td>支援「選取相片和影片」的部分存取模式</td><td>僅在你授予部分存取時</td></tr>
-  <tr><td><code>READ_EXTERNAL_STORAGE</code>（Android 12L 及以下）</td><td>在較舊的 Android 版本提供相同用途</td><td>僅在你授予權限後</td></tr>
+  <tr><td><code>READ_EXTERNAL_STORAGE</code>（Android 12L 及以下）</td><td>在較舊的 Android 版本讀取影片檔案，用於裝置影片清單</td><td>僅在你授予權限後</td></tr>
   <tr><td><code>INTERNET</code>、<code>ACCESS_NETWORK_STATE</code></td><td>開啟你加入的網址、解析連結、提供區域網路編輯頁面</td><td>使用這些功能期間</td></tr>
   <tr><td><code>FOREGROUND_SERVICE</code>、<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>讓播放能在背景與螢幕關閉時持續進行（通知列會顯示狀態，並可讓你停止播放）</td><td>播放進行期間</td></tr>
   <tr><td><code>WAKE_LOCK</code></td><td>在播放期間讓 CPU 保持運作</td><td>播放進行期間</td></tr>
   <tr><td><code>POST_NOTIFICATIONS</code>（Android 13+）</td><td>顯示播放通知與「繼續播放」通知</td><td>服務執行期間</td></tr>
   <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>重新開機後還原背景常駐排程，讓長時間播放能自動接續</td><td>重新開機後</td></tr>
 </table>
+<p>本應用程式<b>不宣告</b>讀取相片與影片的媒體權限（<code>READ_MEDIA_VIDEO</code>、<code>READ_MEDIA_VISUAL_USER_SELECTED</code>）。在 Android 13 及以上，你要播放本機影片時，會由你在系統檔案選擇器（SAF）中自行挑選；本應用程式只會取得你選取的那幾個檔案，不會讀取整個相簿。</p>
 
 <h3>本應用程式不申請以下權限</h3>
 <ul>
@@ -173,7 +171,7 @@
   <li>電池最佳化豁免（本應用程式只會開啟系統清單，是否加入白名單由你決定）</li>
   <li><code>MANAGE_EXTERNAL_STORAGE</code>（所有檔案存取）、<code>QUERY_ALL_PACKAGES</code>（已安裝應用程式清單）</li>
 </ul>
-<p>任何已授予的權限都可以在系統設定中撤銷；撤銷後，相關功能會停止運作，其他功能則不受影響。例如，當你只授予「選取相片和影片」權限時，仍可透過系統檔案選擇器挑選資料夾來播放檔案。</p>
+<p>任何已授予的權限都可以在系統設定中撤銷；撤銷後，相關功能會停止運作，其他功能則不受影響。自 Android 13 起完全不需要任何儲存權限：你隨時可以透過系統檔案選擇器挑選要播放的影片。</p>
 
 <h2>六、兒童</h2>
 <p>本應用程式並非專為兒童設計，也不會蒐集任何年齡資訊。本應用程式本身不提供任何內容；所有播放內容均由使用者自行加入。</p>
